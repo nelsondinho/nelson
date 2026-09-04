@@ -1,0 +1,283 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uchenna Egbo - Personal Portfolio</title>
+
+    <!-- ======================================================= -->
+    <!-- 1. GOOGLE FONTS & FONT AWESOME ICONS                   -->
+    <!-- ======================================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@1,500&family=Jost:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- ======================================================= -->
+    <!-- 2. External CSS                                        -->
+    <!-- ======================================================= -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <!-- ======================================================= -->
+    <!-- 1. HEADER                                              -->
+    <!-- ======================================================= -->
+    <!--Header(siblings 1 of 3 inside <body> )-->
+    <header>
+        <h1>Nelson Mukolu </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- ======================================================= -->
+    <!-- 2. TWO-COLUMN PAGE CONTAINER                           -->
+    <!-- ======================================================= -->
+    <div class="page-container">
+        <!-- MAIN COLUMN (LEFT) -->
+        <main>
+            <!-- SECTION 1: HERO (Solid Electric Purple, Red Border) -->
+            <section id="home">
+                <h2>Welcome to my portfolio</h2>
+                <p class="hero-text">
+                    I learning how to built html and be able to make stable working website
+                <blockquote>
+                    "Structure gives meaning to content; stying brings it to life!"
+                    <blockquote>
+            </section>
+
+            <!--Section2:About Me (Vibrant Red Bg, Sharp Borders) -->
+            <section id="about">
+                <h2>About Me</h2>
+
+
+                <article class="card-background">
+                    <h3>My background</h3>
+                    <figure class="profile-figure">
+                        </figureclass>
+                        <img src="Nelson.jpg" alt="Nelson learning software class" width="400" height="300">
+                        <figcaption style="
+                                    margin-top: 15px;
+                                    font-style: italic;
+                                    color: #868e96;
+                                    font-weight: 500;
+                                ">
+                            Student Mukolu Nelson learning a web
+                            development lesson.
+                        </figcaption>
+                    </figure>
+                    <!-- INLINE DEMO 1 -->
+                    <p style="color: #495057">
+                        I specialaize in web and graphic designing
+                        I play football
+                    </p>
+                    <a href="#contact" class="btn-hire">Get in Touch</a>
+                </article>
+
+                <article class="card-training">
+                    <h3>HTML Learning Resources</h3>
+                    <p>
+                        Check out these guides for further reading
+                        <br />
+                        <span class="badge">semantic HTML5 &amp; CSS3</span>.
+                    </p>
+                </article>
+            </section>
+            </ul>
+
+            <!-- SECTION 3: CONTACT ME (Untouched) -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+
+                <form action="/submit-contact" method="POST">
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Your Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number:</label>
+                        <input type="number" id="phone" name="phone" placeholder="1234567890" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject Interest:</label>
+                        <select id="subject" name="subject">
+                            <option value="html">HTML Basics</option>
+                            <option value="css">
+                                CSS Layouts &amp; Styling
+                            </option>
+                            <option value="javascript">
+                                JavaScript Interactivity
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <p class="form-label">Gender:</p>
+                        <input type="radio" id="male" name="gender" value="male" />
+                        <!-- INLINE DEMO 2 -->
+                        <label for="male" style="
+                                    font-weight: normal;
+                                    margin-right: 20px;
+                                    cursor: pointer;
+                                ">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" />
+                        <label for="female" style="font-weight: normal; cursor: pointer">Female</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Your Message:</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" name="terms" required />
+                        <!-- INLINE DEMO 3 -->
+                        <label for="terms" style="font-weight: normal; cursor: pointer">I accept the terms and
+                            conditions</label>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">
+                            Click to Send Message
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!-- SIDEBAR COLUMN (RIGHT) -->
+        <div class="sidebar-wrapper">
+            <!-- ASIDE 1: Top Border -->
+            <aside class="aside-resources">
+                <h3>HTML Learning Resources</h3>
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-book" style="color: var(--accent-warm)"></i>
+                            MDN Web Docs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-graduation-cap" style="color: var(--accent-warm)"></i>
+                            W3Schools
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank"
+                            rel="noopener">
+                            <i class="fa-solid fa-code" style="color: var(--accent-warm)"></i>
+                            freeCodeCamp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.dev/learn/html/" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-globe" style="color: var(--accent-warm)"></i>
+                            Web.Dev
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- ASIDE 2: RIGHT Border -->
+            <aside class="aside-stack">
+                <h3>Quick Tech Stack</h3>
+                <ul class="tech-stack-list">
+                    <li>HTML5 &amp; Semantic Web</li>
+                    <li>CSS3 Layouts &amp; Selectors</li>
+                    <li>JavaScript Fundamentals</li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- ASIDE 3: TIC-TAC-TOE GAME (WITH OVERLAY AND STRIKE LINE) -->
+    <aside class="game-container">
+        <h3 class="game-title">Play vs Computer</h3>
+
+        <!-- Difficulty Selector -->
+        <div class="game-controls" style="margin-bottom: 15px;">
+            <label for="difficulty" style="font-weight: 600; margin-right: 10px;">Difficulty:</label>
+            <select id="difficulty"
+                style="padding: 5px; border-radius: 4px; border: 1px solid #ccc; font-family: 'Jost', sans-serif;">
+                <option value="easy">Easy (Random Moves)</option>
+                <option value="hard" selected>Hard (Smart AI)</option>
+            </select>
+        </div>
+
+        <p class="game-status">Get ready!</p>
+
+        <!-- Board Wrapper for Overlay & Lines -->
+        <div class="board-wrapper">
+            <!-- The Overlay Screen -->
+            <div id="game-overlay" class="active">
+                <button id="overlay-btn" class="btn-purple">Play Game</button>
+            </div>
+
+            <!-- The Game Board -->
+            <div id="tic-tac-board">
+                <!-- Winning Strike Line -->
+                <div id="strike-line"></div>
+
+                <!-- Game Cells -->
+                <div class="cell" cellIndex="0"></div>
+                <div class="cell" cellIndex="1"></div>
+                <div class="cell" cellIndex="2"></div>
+                <div class="cell" cellIndex="3"></div>
+                <div class="cell" cellIndex="4"></div>
+                <div class="cell" cellIndex="5"></div>
+                <div class="cell" cellIndex="6"></div>
+                <div class="cell" cellIndex="7"></div>
+                <div class="cell" cellIndex="8"></div>
+            </div>
+        </div>
+    </aside>
+    </div>
+    </div>
+
+
+
+    <!-- ======================================================= -->
+    <!-- 3. FOOTER (Untouched)                                  -->
+    <!-- ======================================================= -->
+    <footer>
+        <p>&copy; 2026 Mukolu Nelson. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" class="social-link github" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-link linkedin" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link twitter" title="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+
+
+    </footer>
+    <!-- LINKING JAVASCRIPT AT THE BOTTOM -->
+    <script src="script.js"></script>
+</body>
+
+</html>
