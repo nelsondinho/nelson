@@ -23,6 +23,23 @@ const overlayBtn = document.getElementById("overlay-btn");
 const difficultySelect = document.getElementById("difficulty");
 const strikeLine = document.getElementById("strike-line");
 
+function greeting() {
+    const hour = new Date().getHours();
+    let timeGreeting;
+
+    if (hour < 12) {
+        timeGreeting = "Good morning";
+    } else if (hour < 18) {
+        timeGreeting = "Good afternoon";
+    } else {
+        timeGreeting = "Good evening";
+    }
+
+    document.getElementById("greeting").textContent = `Hello There! ${timeGreeting}`;
+}
+
+greeting();
+
 
 /* =====================================================================
  * STEP 2: SETTING UP THE GAME'S MEMORY (Variables & Arrays)
@@ -150,13 +167,14 @@ function checkWinner() {
         // If any cell in this row is empty, no one has won this row yet. Skip it.
 
 
-        
+
         if (cellA === "" || cellB === "" || cellC === "") {
             continue;
         }
 
         // Strict Equality (===): If cell A, B, and C all have the exact same letter...
-        if (cellA === cellB && cellB === cellC) {
+        if
+         (cellA === cellB && cellB === cellC) {
             roundWon = true; // WE HAVE A WINNER!
             winningIndex = i; // Save the winning row number so we can draw the line
             break; // Stop looping, we already found a winner

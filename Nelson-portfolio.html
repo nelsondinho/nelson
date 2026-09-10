@@ -50,11 +50,13 @@
         <main>
             <!-- SECTION 1: HERO (Solid Electric Purple, Red Border) -->
             <section id="home">
+                <p id="greeting" class="greeting" aria-live="polite"></p>
                 <h2>Welcome to my portfolio</h2>
                 <p class="hero-text">
                     I learning how to built html and be able to make stable working website
+                </p>
                 <blockquote>
-                    "Structure gives meaning to content; stying brings it to life!"
+                    "Structure gives meaning to content; styling brings it to life!"
                     <blockquote>
             </section>
 
@@ -208,51 +210,49 @@
                     <li>JavaScript Fundamentals</li>
                 </ul>
             </aside>
+
+            <!-- ASIDE 3: TIC-TAC-TOE GAME (WITH OVERLAY AND STRIKE LINE) -->
+            <aside class="game-container">
+                <h3 class="game-title">Play vs Computer</h3>
+
+                <!-- Difficulty Selector -->
+                <div class="game-controls" style="margin-bottom: 15px;">
+                    <label for="difficulty" style="font-weight: 600; margin-right: 10px;">Difficulty:</label>
+                    <select id="difficulty"
+                        style="padding: 5px; border-radius: 4px; border: 1px solid #ccc; font-family: 'Jost', sans-serif;">
+                        <option value="easy">Easy (Random Moves)</option>
+                        <option value="hard" selected>Hard (Smart AI)</option>
+                    </select>
+                </div>
+
+                <p class="game-status">Get ready!</p>
+
+                <!-- Board Wrapper for Overlay & Lines -->
+                <div class="board-wrapper">
+                    <!-- The Overlay Screen -->
+                    <div id="game-overlay" class="active">
+                        <button id="overlay-btn" class="btn-purple">Play Game</button>
+                    </div>
+
+                    <!-- The Game Board -->
+                    <div id="tic-tac-board">
+                        <!-- Winning Strike Line -->
+                        <div id="strike-line"></div>
+
+                        <!-- Game Cells -->
+                        <div class="cell" cellIndex="0"></div>
+                        <div class="cell" cellIndex="1"></div>
+                        <div class="cell" cellIndex="2"></div>
+                        <div class="cell" cellIndex="3"></div>
+                        <div class="cell" cellIndex="4"></div>
+                        <div class="cell" cellIndex="5"></div>
+                        <div class="cell" cellIndex="6"></div>
+                        <div class="cell" cellIndex="7"></div>
+                        <div class="cell" cellIndex="8"></div>
+                    </div>
+                </div>
+            </aside>
         </div>
-    </div>
-
-    <!-- ASIDE 3: TIC-TAC-TOE GAME (WITH OVERLAY AND STRIKE LINE) -->
-    <aside class="game-container">
-        <h3 class="game-title">Play vs Computer</h3>
-
-        <!-- Difficulty Selector -->
-        <div class="game-controls" style="margin-bottom: 15px;">
-            <label for="difficulty" style="font-weight: 600; margin-right: 10px;">Difficulty:</label>
-            <select id="difficulty"
-                style="padding: 5px; border-radius: 4px; border: 1px solid #ccc; font-family: 'Jost', sans-serif;">
-                <option value="easy">Easy (Random Moves)</option>
-                <option value="hard" selected>Hard (Smart AI)</option>
-            </select>
-        </div>
-
-        <p class="game-status">Get ready!</p>
-
-        <!-- Board Wrapper for Overlay & Lines -->
-        <div class="board-wrapper">
-            <!-- The Overlay Screen -->
-            <div id="game-overlay" class="active">
-                <button id="overlay-btn" class="btn-purple">Play Game</button>
-            </div>
-
-            <!-- The Game Board -->
-            <div id="tic-tac-board">
-                <!-- Winning Strike Line -->
-                <div id="strike-line"></div>
-
-                <!-- Game Cells -->
-                <div class="cell" cellIndex="0"></div>
-                <div class="cell" cellIndex="1"></div>
-                <div class="cell" cellIndex="2"></div>
-                <div class="cell" cellIndex="3"></div>
-                <div class="cell" cellIndex="4"></div>
-                <div class="cell" cellIndex="5"></div>
-                <div class="cell" cellIndex="6"></div>
-                <div class="cell" cellIndex="7"></div>
-                <div class="cell" cellIndex="8"></div>
-            </div>
-        </div>
-    </aside>
-    </div>
     </div>
 
 

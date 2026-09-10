@@ -142,6 +142,14 @@ main {
     margin-bottom: 15px;
 }
 
+.greeting {
+    color: #000000;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
 .hero-text {
     font-size: 21px;
     color: #ffffff;
